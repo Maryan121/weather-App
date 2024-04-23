@@ -2,7 +2,7 @@
 Welcome to the Weather App! This web application allows users to search for weather information for cities around the world.
 
 ## Demo
-You can try out the live demo of the Weather App[here](https://maryan121.github.io/weather-App/).
+You can try out the live demo of the Weather App  [here](https://maryan121.github.io/weather-App/).
 
 
 ## Features
