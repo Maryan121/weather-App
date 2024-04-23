@@ -1,4 +1,4 @@
-#Weather App
+###Weather App
 Welcome to the Weather App! This web application allows users to search for weather information for cities around the world.
 
 Demo
