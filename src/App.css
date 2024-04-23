@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right,rgb(15, 1, 30),rgb(60, 4, 75));
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+.App{
+    margin-top: 4rem;
+    padding: 1.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+input{
+    font-size: 1.2rem;
+    padding: .5rem;
+    border: none;
+}
+input:focus,input:hover{
+    outline: none;
+}
+button{
+    padding: .5rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #AB1E84;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover,button:focus{
+    opacity: .8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.weatherInfo{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.weatherInfo div{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    align-items: center;
+}
+.weatherInfo p{
+    font-size: 1.4rem;
+}
+.weatherInfo strong{
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: relative;
+}
+.weatherInfo strong #small{
+    position: absolute;
+    top: 0;
+    right: -.7rem; 
+}
+.temperature {
+    position: relative;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .temperature::before {
+    content: '\00B0'; /* Unicode for the degree symbol */
+    position: absolute;
+    top: 0; /* Adjust this value to position the degree symbol as needed */
+    left: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+@media(min-width:510px) {
+    .weatherInfo{
+        width: 40%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 5rem auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .weatherInfo div{
+        gap: 0;
+        align-items: center;
+    }
+   
+    .weatherInfo strong #small{
+        position: sticky;
+        top: 0;
+        right: 0%;
+        margin-top: -10rem
+    };
+    
 }
