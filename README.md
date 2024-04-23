@@ -1,27 +1,27 @@
 # Weather App
 Welcome to the Weather App! This web application allows users to search for weather information for cities around the world.
 
-# Demo
+## Demo
 You can try out the live demo of the Weather App here.
 
-# Features
-Search for weather information by city name.
-Display temperature, weather condition, and other details for the searched city.
-Error handling for non-existent cities.
-Responsive design for optimal viewing on various devices.
-# Technologies Used
--React.js
--HTML5
--CSS3
--OpenWeatherMap API
+## Features
+1. Search for weather information by city name.
+2. Display temperature, weather condition, and other details for the searched city.
+3. Error handling for non-existent cities.
+4. Responsive design for optimal viewing on various devices.
+## Technologies Used
+1. React.js
+2. HTML5
+3. CSS3
+4. OpenWeatherMap API
 # Usage
 
 To use the Weather App, simply follow these steps:
 
-- Enter the name of the city you want to search for in the input field.
-- Click on the "Search" button.
-- View the weather information displayed on the screen.
-- If the city is not found, an error message will be displayed.
+1. Enter the name of the city you want to search for in the input field.
+2.  Click on the "Search" button.
+3. View the weather information displayed on the screen.
+4. If the city is not found, an error message will be displayed.
 # Local Development
 To run the Weather App locally on your machine, follow these steps:
 
